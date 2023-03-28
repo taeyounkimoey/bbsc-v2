@@ -1,0 +1,13 @@
+name: bbsc-v2
+recipe: drupal10
+compose:
+  - docker-compose.network-mtu.yml
+config:
+  webroot: ./web
+services:
+  appserver:
+    ssl: false
+  phpmyadmin:
+    type: phpmyadmin
+    hosts:
+      - database
