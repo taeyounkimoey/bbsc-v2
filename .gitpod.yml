@@ -6,7 +6,7 @@ tasks:
     init: |
       lando start
       lando composer install
-      # lando drush si -y --account-pass=admin --site-name='lando_drupal10' --db-url=mysql://drupal10:drupal10@database/drupal10
+      lando drush si -y --account-pass=admin --site-name='lando_drupal10' --db-url=mysql://drupal10:drupal10@database/drupal10
     command: |
       # start a rebuild  with actual networking service (prebuild uses different)
       lando rebuild -y
