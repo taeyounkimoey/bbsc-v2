@@ -1,0 +1,9 @@
+name: 'DS Test layout theme'
+type: theme
+description: 'Theme for testing a theme-provided layout'
+base theme: stark
+core_version_requirement: ^9.5 || ^10
+# Information added by Drupal.org packaging script on 2022-10-01
+version: '5.0.0-alpha3'
+project: 'ds'
+datestamp: 1664659384

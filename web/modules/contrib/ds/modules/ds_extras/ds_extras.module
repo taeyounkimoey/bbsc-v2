@@ -1,0 +1,186 @@
+<?php
+
+/**
+ * @file
+ * Display Suite extras main functions.
+ */
+
+use Drupal\Component\Utility\Html;
+use Drupal\Component\Utility\Unicode;
+use Drupal\Core\Entity\Display\EntityDisplayInterface;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Render\Element;
+use Drupal\Core\Url;
+use Drupal\Core\Link;
+
+/**
+ * Implements hook_layout_alter().
+ */
+function ds_extras_layout_alter(&$definitions) {
+  if (\Drupal::config('ds_extras.settings')->get('hidden_region')) {
+    /** @var \Drupal\Core\Layout\LayoutDefinition $layout */
+    foreach ($definitions as $key => $layout) {
+      $regions = $layout->getRegions();
+      $regions['ds_hidden'] = ['label' => t('Hidden')];
+      $layout->setRegions($regions);
+    }
+  }
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function ds_extras_form_ds_admin_form_alter(&$form, FormStateInterface $form_state) {
+  $config = \Drupal::configFactory()->getEditable('ds_extras.settings');
+
+  $form['fs2'] = [
+    '#type' => 'details',
+    '#title' => t('Extra fields'),
+    '#group' => 'additional_settings',
+    '#weight' => 2,
+    '#tree' => TRUE,
+  ];
+
+  $form['fs2']['fields_extra'] = [
+    '#type' => 'checkbox',
+    '#title' => t('Enable extra fields'),
+    '#description' => t('Make fields from other modules available on the "Manage display" screens.'),
+    '#default_value' => $config->get('fields_extra'),
+  ];
+
+  $form['fs2']['fields_extra_list'] = [
+    '#type' => 'textarea',
+    '#description' => t('Enter fields line by line, where each line is a combination of entity type, bundle and field name. E.g. node|article|tweetbutton. It might be possible that the actual content of the field depends on configuration of that field/module.'),
+    '#default_value' => implode("\n", $config->get('fields_extra_list')),
+    '#states' => [
+      'visible' => [
+        'input[name="fs2[fields_extra]"]' => ['checked' => TRUE],
+      ],
+    ],
+  ];
+
+  $form['fs3']['field_permissions'] = [
+    '#type' => 'checkbox',
+    '#title' => t('Field permissions'),
+    '#description' => t('Enables view permissions on all Display Suite fields.'),
+    '#default_value' => $config->get('field_permissions'),
+  ];
+
+  $form['fs3']['switch_field'] = [
+    '#type' => 'checkbox',
+    '#title' => t('View mode switcher'),
+    '#description' => t('Adds a field with links to switch view modes inline with Ajax. Only works for nodes at this time. It does not work in combination with the reset layout.'),
+    '#default_value' => $config->get('switch_field'),
+  ];
+
+  $form['fs3']['hidden_region'] = [
+    '#type' => 'checkbox',
+    '#title' => t('Hidden region'),
+    '#description' => t('Add a hidden region to the layouts. Fields will be built but not printed.'),
+    '#default_value' => $config->get('hidden_region'),
+  ];
+
+  $form['fs3']['override_node_revision'] = [
+    '#type' => 'checkbox',
+    '#title' => t('Custom node revision view mode'),
+    '#description' => t('Override the node revision page view with a custom view mode'),
+    '#default_value' => $config->get('override_node_revision'),
+  ];
+
+  $options = [];
+  $view_modes = \Drupal::service('entity_display.repository')->getViewModes('node');
+  foreach ($view_modes as $key => $view_mode) {
+    $options[$key] = $view_mode['label'];
+  }
+
+  $form['fs3']['override_node_revision_view_mode'] = [
+    '#type' => 'select',
+    '#description' => t('The revision view mode'),
+    '#default_value' => $config->get('override_node_revision_view_mode'),
+    '#options' => $options,
+    '#states' => [
+      'visible' => [
+        'input[name="fs3[override_node_revision]"]' => ['checked' => TRUE],
+      ],
+    ],
+  ];
+
+  $form['#submit'][] = 'ds_extras_settings_submit';
+  $form['#attached']['library'][] = 'ds_extras/admin';
+}
+
+/**
+ * Submit callback: Extras settings screen.
+ */
+function ds_extras_settings_submit($form, FormStateInterface $form_state) {
+  $values = $form_state->getValues();
+
+  $extra_fields = [];
+  if (!empty($values['fs2']['fields_extra_list'])) {
+    $extra_fields = explode("\n", str_replace("\r", '', $values['fs2']['fields_extra_list']));
+  }
+
+  $config = \Drupal::configFactory()->getEditable('ds_extras.settings')
+    ->set('fields_extra', $values['fs2']['fields_extra'])
+    ->set('fields_extra_list', $extra_fields)
+    ->set('field_permissions', $values['fs3']['field_permissions'])
+    ->set('switch_field', $values['fs3']['switch_field'])
+    ->set('hidden_region', $values['fs3']['hidden_region'])
+    ->set('override_node_revision', $values['fs3']['override_node_revision'])
+    ->set('override_node_revision_view_mode', $values['fs3']['override_node_revision_view_mode']);
+  $config->save();
+
+  // Mark the router items for rebuild.
+  \Drupal::service('router.builder')->setRebuildNeeded();
+
+  // Clear layout plugin caches.
+  \Drupal::service('plugin.manager.core.layout')->clearCachedDefinitions();
+
+}
+
+/**
+ * Check DS fields access.
+ *
+ * @param string $field
+ *   The machine name of the field.
+ * @param string $entity_type
+ *   The name of the entity type.
+ *
+ * @return bool
+ *   TRUE if the user has access to view this field in this entity type, FALSE
+ *   otherwise.
+ */
+function ds_extras_ds_field_access($field, $entity_type) {
+  if (\Drupal::currentUser()->hasPermission('view ' . $field . ' on ' . $entity_type)) {
+    return TRUE;
+  }
+  return FALSE;
+}
+
+/**
+ * Implements hook_entity_extra_field_info().
+ */
+function ds_extras_entity_extra_field_info() {
+  $extra = [];
+
+  if (\Drupal::config('ds_extras.settings')->get('fields_extra')) {
+    $fields = \Drupal::config('ds_extras.settings')->get('fields_extra_list');
+    if (empty($fields)) {
+      return $extra;
+    }
+    foreach ($fields as $field) {
+      $field = trim($field);
+      if (!empty($field)) {
+        list($entity, $bundle, $field_name) = explode('|', $field);
+        $extra[Html::escape($entity)][Html::escape($bundle)]['display'][$field_name] = [
+          'label' => Unicode::ucfirst(str_replace('_', ' ', Html::escape($field_name))),
+          'description' => Unicode::ucfirst(str_replace('_', ' ', Html::escape($field_name))),
+          'weight' => 0,
+        ];
+      }
+    }
+  }
+
+  return $extra;
+}
