@@ -1,0 +1,8 @@
+name: Custom breadcrumbs
+type: module
+description: 'Provides a custom breadcrumbs configuration entity.'
+package: Custom
+core_version_requirement: ^8.8 || ^9 || ^10
+configure: custom_breadcrumbs.config
+dependencies:
+  - token:token

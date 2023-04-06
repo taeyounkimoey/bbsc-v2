@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * @file
+ * Installs the Display Suite Extras module.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function ds_extras_install() {
+  module_set_weight('ds_extras', 2);
+}

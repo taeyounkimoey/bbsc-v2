@@ -1,0 +1,18 @@
+{#
+/**
+ * @file
+ * Display Suite 1 column template.
+ *
+ * Available variables:
+ * - content_wrapper: wrapper around content
+ * - attributes: content region attributes
+ * - content.content: content region
+ */
+#}
+<{{ content_wrapper }}{{ attributes.addClass('ds-1col', 'clearfix') }} id="overridden-ds-1-col-template">
+
+  {{ title_suffix.contextual_links }}
+
+  {{ content.content }}
+
+</{{ content_wrapper }}>
