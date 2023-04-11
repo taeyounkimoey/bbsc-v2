@@ -1,0 +1,14 @@
+uuid: a1a5735d-6d8c-4d96-9b84-087025f7c32d
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.accelerator_partner_zero_energy_districts
+  module:
+    - user
+id: user_add_role_action.accelerator_partner_zero_energy_districts
+label: 'Add the Accelerator Partner Zero Energy Districts role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: accelerator_partner_zero_energy_districts

@@ -1,0 +1,14 @@
+uuid: 5193eaf2-5c1b-485b-a726-e04dd4893182
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.accelerator_partner_data_access
+  module:
+    - user
+id: user_add_role_action.accelerator_partner_data_access
+label: 'Add the Accelerator Partner Data Access role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: accelerator_partner_data_access

@@ -1,0 +1,14 @@
+uuid: 3512b5f4-c395-4729-9bc5-653738bbd435
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.drupal_team
+  module:
+    - user
+id: user_remove_role_action.drupal_team
+label: 'Remove the Drupal Team role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: drupal_team

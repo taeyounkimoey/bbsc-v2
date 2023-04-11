@@ -1,0 +1,14 @@
+uuid: 8eb2aa89-4564-4da1-9e82-a5879ab5ae15
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.accelerator_partner_data_center
+  module:
+    - user
+id: user_add_role_action.accelerator_partner_data_center
+label: 'Add the Accelerator Partner Data Center role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: accelerator_partner_data_center

@@ -1,0 +1,9 @@
+uuid: f8279d15-e663-4b01-a8e8-f3f41251453f
+langcode: en
+status: true
+dependencies: {  }
+id: accelerator_partner_combined_heat
+label: 'Accelerator Partner Combined Heat'
+weight: 12
+is_admin: null
+permissions: {  }

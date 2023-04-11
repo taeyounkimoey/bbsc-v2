@@ -1,0 +1,9 @@
+uuid: 60bfa9af-187d-4a0b-9c18-55e57b60418e
+langcode: en
+status: true
+dependencies: {  }
+id: content_promoter
+label: 'Content Promoter'
+weight: 5
+is_admin: null
+permissions: {  }

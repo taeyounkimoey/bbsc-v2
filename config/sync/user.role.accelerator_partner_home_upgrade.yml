@@ -1,0 +1,9 @@
+uuid: c3386a2d-9339-498b-b626-2821a9ff6582
+langcode: en
+status: true
+dependencies: {  }
+id: accelerator_partner_home_upgrade
+label: 'Accelerator Partner Home Upgrade'
+weight: 19
+is_admin: null
+permissions: {  }

@@ -1,0 +1,9 @@
+uuid: 7625287c-03b7-491f-93ea-45420b871716
+langcode: en
+status: true
+dependencies: {  }
+id: accelerator_partner_energy_savings
+label: 'Accelerator Partner Energy Savings'
+weight: 23
+is_admin: null
+permissions: {  }

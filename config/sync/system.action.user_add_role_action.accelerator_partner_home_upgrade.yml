@@ -1,0 +1,14 @@
+uuid: b7bbd720-bd70-488a-a6a8-3b3a70e04fd6
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.accelerator_partner_home_upgrade
+  module:
+    - user
+id: user_add_role_action.accelerator_partner_home_upgrade
+label: 'Add the Accelerator Partner Home Upgrade role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: accelerator_partner_home_upgrade

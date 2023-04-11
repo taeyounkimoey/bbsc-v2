@@ -1,0 +1,9 @@
+uuid: a59ae8e6-dbdd-4faa-acb1-a38b7cb1ff32
+langcode: en
+status: true
+dependencies: {  }
+id: accelerator_partner_home_energy
+label: 'Accelerator Partner Home Energy'
+weight: 20
+is_admin: null
+permissions: {  }

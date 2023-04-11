@@ -1,0 +1,9 @@
+uuid: ebd47d1c-7867-4d1d-8c2e-117d78fe0e7a
+langcode: en
+status: true
+dependencies: {  }
+id: accelerator_partner_data_access
+label: 'Accelerator Partner Data Access'
+weight: 21
+is_admin: null
+permissions: {  }

@@ -1,0 +1,9 @@
+uuid: 97ee00ba-a4ab-474c-b8af-73449af44221
+langcode: en
+status: true
+dependencies: {  }
+id: accelerator_partner_zero_energy_schools
+label: 'Accelerator Partner Zero Energy Schools'
+weight: 14
+is_admin: null
+permissions: {  }

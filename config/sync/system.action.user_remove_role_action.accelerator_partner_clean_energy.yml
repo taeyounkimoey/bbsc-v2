@@ -1,0 +1,14 @@
+uuid: f9d0e428-fe6b-4c26-b4a8-d0884894b398
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.accelerator_partner_clean_energy
+  module:
+    - user
+id: user_remove_role_action.accelerator_partner_clean_energy
+label: 'Remove the Accelerator Partner Clean Energy role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: accelerator_partner_clean_energy

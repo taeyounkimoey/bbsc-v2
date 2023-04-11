@@ -1,0 +1,14 @@
+uuid: f0da294c-d0bd-4e7c-b24e-f71a9258fa38
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.accelerator_partner_smart_labs
+  module:
+    - user
+id: user_add_role_action.accelerator_partner_smart_labs
+label: 'Add the Accelerator Partner Smart Labs role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: accelerator_partner_smart_labs

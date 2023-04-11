@@ -1,0 +1,9 @@
+uuid: ded3d24a-5799-4897-98ac-147c31089add
+langcode: en
+status: true
+dependencies: {  }
+id: content_author
+label: 'Content Author'
+weight: 4
+is_admin: null
+permissions: {  }

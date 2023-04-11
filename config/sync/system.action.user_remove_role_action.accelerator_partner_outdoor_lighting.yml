@@ -1,0 +1,14 @@
+uuid: fba58e26-28e7-4622-97ff-07849fbed8ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.accelerator_partner_outdoor_lighting
+  module:
+    - user
+id: user_remove_role_action.accelerator_partner_outdoor_lighting
+label: 'Remove the Accelerator Partner Outdoor Lighting role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: accelerator_partner_outdoor_lighting

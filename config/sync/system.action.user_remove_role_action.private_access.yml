@@ -1,0 +1,14 @@
+uuid: ab50130a-0a89-4d88-a081-a649fc85a102
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.private_access
+  module:
+    - user
+id: user_remove_role_action.private_access
+label: 'Remove the Private Access role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: private_access

@@ -1,0 +1,14 @@
+uuid: a2eeb862-501f-4cc5-b512-b38304847b95
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.accelerator_partner_energy_savings
+  module:
+    - user
+id: user_remove_role_action.accelerator_partner_energy_savings
+label: 'Remove the Accelerator Partner Energy Savings role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: accelerator_partner_energy_savings

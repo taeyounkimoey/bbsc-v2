@@ -1,0 +1,14 @@
+uuid: a78b7b51-4f24-4f3a-8961-3277e3ad73ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.content_promoter
+  module:
+    - user
+id: user_add_role_action.content_promoter
+label: 'Add the Content Promoter role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: content_promoter

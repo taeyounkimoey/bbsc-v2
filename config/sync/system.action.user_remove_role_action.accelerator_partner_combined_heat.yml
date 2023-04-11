@@ -1,0 +1,14 @@
+uuid: fbe311b5-aea6-45d0-81c0-4ddcdc96062c
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.accelerator_partner_combined_heat
+  module:
+    - user
+id: user_remove_role_action.accelerator_partner_combined_heat
+label: 'Remove the Accelerator Partner Combined Heat role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: accelerator_partner_combined_heat

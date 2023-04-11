@@ -1,0 +1,14 @@
+uuid: 85adc431-3961-4dd5-8e54-8b7be52946e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.content_promoter
+  module:
+    - user
+id: user_remove_role_action.content_promoter
+label: 'Remove the Content Promoter role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: content_promoter

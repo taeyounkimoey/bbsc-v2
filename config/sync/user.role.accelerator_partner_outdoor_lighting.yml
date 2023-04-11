@@ -1,0 +1,9 @@
+uuid: 668b27e5-2f6b-4199-8127-8296da01557e
+langcode: en
+status: true
+dependencies: {  }
+id: accelerator_partner_outdoor_lighting
+label: 'Accelerator Partner Outdoor Lighting'
+weight: 16
+is_admin: null
+permissions: {  }

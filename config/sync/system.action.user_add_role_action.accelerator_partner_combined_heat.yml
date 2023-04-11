@@ -1,0 +1,14 @@
+uuid: 6ccedc67-d793-4163-bacc-01eb10283b75
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.accelerator_partner_combined_heat
+  module:
+    - user
+id: user_add_role_action.accelerator_partner_combined_heat
+label: 'Add the Accelerator Partner Combined Heat role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: accelerator_partner_combined_heat
