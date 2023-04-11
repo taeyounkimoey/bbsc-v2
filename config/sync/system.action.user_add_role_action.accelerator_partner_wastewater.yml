@@ -1,0 +1,14 @@
+uuid: 3fa15d9b-0001-4d4c-b4c9-f2a78ce9f49b
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.accelerator_partner_wastewater
+  module:
+    - user
+id: user_add_role_action.accelerator_partner_wastewater
+label: 'Add the Accelerator Partner Wastewater role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: accelerator_partner_wastewater

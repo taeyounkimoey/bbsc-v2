@@ -1,0 +1,14 @@
+uuid: 3ba596ab-5bab-4ba7-9a42-452fa7464aa6
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.accelerator_partner_energy_savings
+  module:
+    - user
+id: user_add_role_action.accelerator_partner_energy_savings
+label: 'Add the Accelerator Partner Energy Savings role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: accelerator_partner_energy_savings

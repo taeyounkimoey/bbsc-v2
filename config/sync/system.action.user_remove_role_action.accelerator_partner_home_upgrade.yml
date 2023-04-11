@@ -1,0 +1,14 @@
+uuid: 64679145-9288-43fc-9efa-4081565f8df3
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.accelerator_partner_home_upgrade
+  module:
+    - user
+id: user_remove_role_action.accelerator_partner_home_upgrade
+label: 'Remove the Accelerator Partner Home Upgrade role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: accelerator_partner_home_upgrade

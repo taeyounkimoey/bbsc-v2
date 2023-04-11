@@ -1,0 +1,14 @@
+uuid: 659ce093-ffcc-41a3-8fbc-04335f906260
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.accelerator_partner_wastewater
+  module:
+    - user
+id: user_remove_role_action.accelerator_partner_wastewater
+label: 'Remove the Accelerator Partner Wastewater role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: accelerator_partner_wastewater

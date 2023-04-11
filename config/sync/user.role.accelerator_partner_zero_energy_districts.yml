@@ -1,0 +1,9 @@
+uuid: 6d0c1387-80f7-4ed5-b499-9ea3267569af
+langcode: en
+status: true
+dependencies: {  }
+id: accelerator_partner_zero_energy_districts
+label: 'Accelerator Partner Zero Energy Districts'
+weight: 15
+is_admin: null
+permissions: {  }

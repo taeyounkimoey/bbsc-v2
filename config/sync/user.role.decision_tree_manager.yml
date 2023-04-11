@@ -1,0 +1,9 @@
+uuid: 56eac2bc-f526-4f57-95c7-c4f5bc5b926b
+langcode: en
+status: true
+dependencies: {  }
+id: decision_tree_manager
+label: 'Decision Tree Manager'
+weight: 8
+is_admin: null
+permissions: {  }

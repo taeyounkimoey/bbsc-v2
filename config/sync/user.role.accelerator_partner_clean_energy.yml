@@ -1,0 +1,9 @@
+uuid: 91afb795-4848-46f3-a61d-eff91e5ed055
+langcode: en
+status: true
+dependencies: {  }
+id: accelerator_partner_clean_energy
+label: 'Accelerator Partner Clean Energy'
+weight: 10
+is_admin: null
+permissions: {  }

@@ -1,0 +1,14 @@
+uuid: b36a6a90-367f-4244-ba5d-b3a6f721615c
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.accelerator_partner_zero_energy_districts
+  module:
+    - user
+id: user_remove_role_action.accelerator_partner_zero_energy_districts
+label: 'Remove the Accelerator Partner Zero Energy Districts role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: accelerator_partner_zero_energy_districts
