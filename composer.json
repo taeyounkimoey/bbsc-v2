@@ -52,6 +52,7 @@
         "drupal/redirect": "^1.8",
         "drupal/search_api_solr": "^4.2",
         "drupal/token": "^1.11",
+        "drupal/uswds_base": "^3.3",
         "drupal/webform": "^6.2@beta",
         "drush/drush": "^11.5"
     },
