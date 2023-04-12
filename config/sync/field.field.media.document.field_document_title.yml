@@ -1,0 +1,19 @@
+uuid: a66cf679-5eaf-4ffb-aed5-834ef1d87a53
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_document_title
+    - media.type.document
+id: media.document.field_document_title
+field_name: field_document_title
+entity_type: media
+bundle: document
+label: 'Document Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
