@@ -1,8 +1,0 @@
-uuid: 8d589b32-401c-430d-96e6-c03433c52a56
-langcode: en
-status: true
-dependencies: {  }
-name: 'Presentation Type'
-vid: presentation_type
-description: ''
-weight: 0
