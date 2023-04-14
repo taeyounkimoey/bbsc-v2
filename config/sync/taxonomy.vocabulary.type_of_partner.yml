@@ -1,8 +1,0 @@
-uuid: 357ffb79-f4ea-4211-83db-d0dc1ccabda2
-langcode: en
-status: true
-dependencies: {  }
-name: 'Type of Partner'
-vid: type_of_partner
-description: ''
-weight: 0

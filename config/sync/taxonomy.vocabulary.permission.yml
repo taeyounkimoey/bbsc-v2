@@ -1,8 +1,0 @@
-uuid: b562a938-cffe-4356-8dd1-424efd2654d6
-langcode: en
-status: true
-dependencies: {  }
-name: Permission
-vid: permission
-description: ''
-weight: 0
