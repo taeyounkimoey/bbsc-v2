@@ -1,9 +1,0 @@
-uuid: ddb468d5-3f72-4a02-ae81-4f0d15d5cb3a
-langcode: en
-status: true
-dependencies: {  }
-id: private_access
-label: 'Private Access'
-weight: 11
-is_admin: null
-permissions: {  }

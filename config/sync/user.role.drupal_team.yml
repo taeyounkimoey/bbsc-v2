@@ -1,9 +1,0 @@
-uuid: 7f5c3e20-bca0-43ab-80ca-e6c25f412c0b
-langcode: en
-status: true
-dependencies: {  }
-id: drupal_team
-label: 'Drupal Team'
-weight: 9
-is_admin: null
-permissions: {  }
