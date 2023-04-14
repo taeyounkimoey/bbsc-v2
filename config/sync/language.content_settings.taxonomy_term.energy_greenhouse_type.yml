@@ -1,0 +1,11 @@
+uuid: 5353fa01-c29a-4607-b433-bbbbae7e4b57
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.energy_greenhouse_type
+id: taxonomy_term.energy_greenhouse_type
+target_entity_type_id: taxonomy_term
+target_bundle: energy_greenhouse_type
+default_langcode: site_default
+language_alterable: false

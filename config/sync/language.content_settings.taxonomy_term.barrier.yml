@@ -1,0 +1,11 @@
+uuid: 1e318b35-bc08-4cde-9c32-3035ba0f4c08
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.barrier
+id: taxonomy_term.barrier
+target_entity_type_id: taxonomy_term
+target_bundle: barrier
+default_langcode: site_default
+language_alterable: false

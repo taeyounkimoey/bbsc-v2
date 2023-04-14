@@ -1,0 +1,8 @@
+uuid: 87286a04-3c43-483f-8073-8a7972478647
+langcode: en
+status: true
+dependencies: {  }
+name: 'Content Type'
+vid: content_type
+description: ''
+weight: 0

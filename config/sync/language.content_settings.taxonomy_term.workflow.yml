@@ -1,0 +1,11 @@
+uuid: a9d6d439-3195-444e-9427-7080ae7215bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.workflow
+id: taxonomy_term.workflow
+target_entity_type_id: taxonomy_term
+target_bundle: workflow
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,11 @@
+uuid: 3b8b2b2b-ee4f-4448-a853-2f0fee4e5fdb
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.sector
+id: taxonomy_term.sector
+target_entity_type_id: taxonomy_term
+target_bundle: sector
+default_langcode: site_default
+language_alterable: false

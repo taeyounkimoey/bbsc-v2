@@ -1,0 +1,11 @@
+uuid: 7ce3d40c-a115-4c3c-b6da-1633cee4837b
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.partnerships
+id: taxonomy_term.partnerships
+target_entity_type_id: taxonomy_term
+target_bundle: partnerships
+default_langcode: site_default
+language_alterable: false
