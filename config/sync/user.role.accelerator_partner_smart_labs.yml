@@ -1,9 +1,0 @@
-uuid: 88fea7a8-96c4-4444-b935-258053f89106
-langcode: en
-status: true
-dependencies: {  }
-id: accelerator_partner_smart_labs
-label: 'Accelerator Partner Smart Labs'
-weight: 17
-is_admin: null
-permissions: {  }

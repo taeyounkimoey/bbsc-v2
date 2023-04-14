@@ -1,9 +1,0 @@
-uuid: 671ad87d-8964-407e-aed7-d2e410784b59
-langcode: en
-status: true
-dependencies: {  }
-id: accelerator_partner_data_center
-label: 'Accelerator Partner Data Center'
-weight: 22
-is_admin: null
-permissions: {  }

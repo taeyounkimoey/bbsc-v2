@@ -1,9 +1,0 @@
-uuid: c4b649ec-1065-43ad-a1b3-390418be7c75
-langcode: en
-status: true
-dependencies: {  }
-id: accelerator_partner_energy_performance
-label: 'Accelerator Partner Energy Performance'
-weight: 13
-is_admin: null
-permissions: {  }

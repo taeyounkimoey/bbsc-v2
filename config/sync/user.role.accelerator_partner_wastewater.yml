@@ -1,9 +1,0 @@
-uuid: 975c7e1e-1e50-46d0-b908-7b4ffd805f72
-langcode: en
-status: true
-dependencies: {  }
-id: accelerator_partner_wastewater
-label: 'Accelerator Partner Wastewater'
-weight: 18
-is_admin: null
-permissions: {  }
