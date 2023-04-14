@@ -1,0 +1,11 @@
+uuid: bb6b8899-b29a-4b86-9b28-513861700808
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.playbook_section
+id: taxonomy_term.playbook_section
+target_entity_type_id: taxonomy_term
+target_bundle: playbook_section
+default_langcode: site_default
+language_alterable: false

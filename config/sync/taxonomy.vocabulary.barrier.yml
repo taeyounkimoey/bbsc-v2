@@ -1,0 +1,8 @@
+uuid: 4bc5cc3f-9e41-42ea-a71a-00c0ff0e2236
+langcode: en
+status: true
+dependencies: {  }
+name: Barrier
+vid: barrier
+description: ''
+weight: 0

@@ -1,0 +1,11 @@
+uuid: dfe985db-c68d-431b-aaac-e2a4cd736798
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.building_size
+id: taxonomy_term.building_size
+target_entity_type_id: taxonomy_term
+target_bundle: building_size
+default_langcode: site_default
+language_alterable: false

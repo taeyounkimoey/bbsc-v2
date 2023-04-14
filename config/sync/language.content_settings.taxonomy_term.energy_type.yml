@@ -1,0 +1,11 @@
+uuid: 4f3ada8c-2ddf-4a8d-8697-5731f046616a
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.energy_type
+id: taxonomy_term.energy_type
+target_entity_type_id: taxonomy_term
+target_bundle: energy_type
+default_langcode: site_default
+language_alterable: false

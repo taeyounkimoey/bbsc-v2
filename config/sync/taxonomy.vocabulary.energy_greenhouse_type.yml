@@ -1,0 +1,8 @@
+uuid: 246ffe83-8a74-4f67-a2ef-4f9cbf5a9d4e
+langcode: en
+status: true
+dependencies: {  }
+name: 'Energy Greenhouse Type'
+vid: energy_greenhouse_type
+description: ''
+weight: 0

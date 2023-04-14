@@ -1,0 +1,8 @@
+uuid: fb861082-61df-4e95-b4cb-38baf7da5b3d
+langcode: en
+status: true
+dependencies: {  }
+name: 'Building Type'
+vid: building_type
+description: ''
+weight: 0

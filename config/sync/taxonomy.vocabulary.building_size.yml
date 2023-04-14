@@ -1,0 +1,8 @@
+uuid: 3934c64c-0b58-4fd0-955a-d9688169a499
+langcode: en
+status: true
+dependencies: {  }
+name: 'Building Size'
+vid: building_size
+description: ''
+weight: 0

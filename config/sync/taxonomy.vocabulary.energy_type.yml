@@ -1,0 +1,8 @@
+uuid: 3c694014-995d-470d-95ae-bbc1c279b2c0
+langcode: en
+status: true
+dependencies: {  }
+name: 'Energy Type'
+vid: energy_type
+description: ''
+weight: 0

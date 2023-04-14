@@ -1,0 +1,11 @@
+uuid: e69d7a59-ba3c-44b2-89a7-6d81d7669ae0
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.swap_season
+id: taxonomy_term.swap_season
+target_entity_type_id: taxonomy_term
+target_bundle: swap_season
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,8 @@
+uuid: f00e6bb5-dbb3-4d12-948c-92903213ee96
+langcode: en
+status: true
+dependencies: {  }
+name: 'Custom Resource Type'
+vid: custom_resource_type
+description: ''
+weight: 0
