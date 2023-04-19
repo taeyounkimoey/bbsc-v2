@@ -5,8 +5,10 @@ dependencies:
   config:
     - core.entity_view_mode.user.compact
     - field.field.user.user.field_last_password_reset
+    - field.field.user.user.field_organization
     - field.field.user.user.field_password_expiration
     - field.field.user.user.field_pending_expire_sent
+    - field.field.user.user.field_user_name
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
@@ -33,8 +35,10 @@ content:
 hidden:
   breadcrumbs: true
   field_last_password_reset: true
+  field_organization: true
   field_password_expiration: true
   field_pending_expire_sent: true
+  field_user_name: true
   langcode: true
   member_for: true
   search_api_excerpt: true
