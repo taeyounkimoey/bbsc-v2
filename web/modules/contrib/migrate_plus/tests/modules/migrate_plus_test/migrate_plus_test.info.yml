@@ -1,0 +1,8 @@
+type: module
+name: Migrate Plus Test
+description: 'Test module to test Migrate Plus.'
+package: Testing
+core_version_requirement: '>=9.1'
+dependencies:
+  - drupal:migrate
+  - migrate_plus:migrate_plus
