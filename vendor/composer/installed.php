@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '5b95b2c23657762f87f13c83db112104fea996e9',
+        'reference' => '87c58c0d70c94cd748ea718711913a433212d599',
         'name' => 'drupal/recommended-project',
         'dev' => true,
     ),
@@ -718,6 +718,15 @@
             'reference' => '6.0.1',
             'dev_requirement' => false,
         ),
+        'drupal/migrate_upgrade' => array(
+            'pretty_version' => '4.0.0',
+            'version' => '4.0.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/migrate_upgrade',
+            'aliases' => array(),
+            'reference' => '4.0.0',
+            'dev_requirement' => false,
+        ),
         'drupal/multiselect' => array(
             'pretty_version' => '2.0.0-beta2',
             'version' => '2.0.0.0-beta2',
@@ -778,7 +787,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '5b95b2c23657762f87f13c83db112104fea996e9',
+            'reference' => '87c58c0d70c94cd748ea718711913a433212d599',
             'dev_requirement' => false,
         ),
         'drupal/redirect' => array(
