@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'c54ca5c86589e68cbdfce2c5c1386c940dc2f0c5',
+        'reference' => 'e94d591ec5b4640489779796a17a0139ec0854a7',
         'name' => 'drupal/recommended-project',
         'dev' => true,
     ),
@@ -628,6 +628,15 @@
             'reference' => '8.x-4.4',
             'dev_requirement' => false,
         ),
+        'drupal/media_migration' => array(
+            'pretty_version' => '1.0.0-alpha16',
+            'version' => '1.0.0.0-alpha16',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/media_migration',
+            'aliases' => array(),
+            'reference' => '8.x-1.0-alpha16',
+            'dev_requirement' => false,
+        ),
         'drupal/menu_block' => array(
             'pretty_version' => '1.10.0',
             'version' => '1.10.0.0',
@@ -635,6 +644,87 @@
             'install_path' => __DIR__ . '/../../web/modules/contrib/menu_block',
             'aliases' => array(),
             'reference' => '8.x-1.10',
+            'dev_requirement' => false,
+        ),
+        'drupal/migmag' => array(
+            'pretty_version' => '1.8.1',
+            'version' => '1.8.1.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/migmag',
+            'aliases' => array(),
+            'reference' => '1.8.1',
+            'dev_requirement' => false,
+        ),
+        'drupal/migmag_callback_upgrade' => array(
+            'dev_requirement' => false,
+            'replaced' => array(
+                0 => '1.8.1',
+            ),
+        ),
+        'drupal/migmag_menu_link_migrate' => array(
+            'dev_requirement' => false,
+            'replaced' => array(
+                0 => '1.8.1',
+            ),
+        ),
+        'drupal/migmag_process' => array(
+            'dev_requirement' => false,
+            'replaced' => array(
+                0 => '1.8.1',
+            ),
+        ),
+        'drupal/migmag_process_lookup_replace' => array(
+            'dev_requirement' => false,
+            'replaced' => array(
+                0 => '1.8.1',
+            ),
+        ),
+        'drupal/migmag_rollbackable' => array(
+            'dev_requirement' => false,
+            'replaced' => array(
+                0 => '1.8.1',
+            ),
+        ),
+        'drupal/migmag_rollbackable_replace' => array(
+            'dev_requirement' => false,
+            'replaced' => array(
+                0 => '1.8.1',
+            ),
+        ),
+        'drupal/migrate_file' => array(
+            'pretty_version' => '2.1.2',
+            'version' => '2.1.2.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/migrate_file',
+            'aliases' => array(),
+            'reference' => '2.1.2',
+            'dev_requirement' => false,
+        ),
+        'drupal/migrate_plus' => array(
+            'pretty_version' => '6.0.0',
+            'version' => '6.0.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/migrate_plus',
+            'aliases' => array(),
+            'reference' => '6.0.0',
+            'dev_requirement' => false,
+        ),
+        'drupal/migrate_tools' => array(
+            'pretty_version' => '6.0.1',
+            'version' => '6.0.1.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/migrate_tools',
+            'aliases' => array(),
+            'reference' => '6.0.1',
+            'dev_requirement' => false,
+        ),
+        'drupal/migrate_upgrade' => array(
+            'pretty_version' => '4.0.0',
+            'version' => '4.0.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/migrate_upgrade',
+            'aliases' => array(),
+            'reference' => '4.0.0',
             'dev_requirement' => false,
         ),
         'drupal/multiselect' => array(
@@ -697,7 +787,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'c54ca5c86589e68cbdfce2c5c1386c940dc2f0c5',
+            'reference' => 'e94d591ec5b4640489779796a17a0139ec0854a7',
             'dev_requirement' => false,
         ),
         'drupal/redirect' => array(
@@ -725,6 +815,15 @@
             'install_path' => __DIR__ . '/../../web/modules/contrib/search_api_solr',
             'aliases' => array(),
             'reference' => '4.2.10',
+            'dev_requirement' => false,
+        ),
+        'drupal/smart_sql_idmap' => array(
+            'pretty_version' => '1.1.1',
+            'version' => '1.1.1.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/smart_sql_idmap',
+            'aliases' => array(),
+            'reference' => '1.1.1',
             'dev_requirement' => false,
         ),
         'drupal/token' => array(
