@@ -1,9 +1,0 @@
-uuid: c1c83284-8bab-4f01-b5f9-c53b7b931f8c
-langcode: en
-status: true
-dependencies: {  }
-id: content_publisher
-label: 'Content Publisher'
-weight: 6
-is_admin: null
-permissions: {  }
