@@ -1,4 +1,4 @@
-uuid: 8d6f5860-b44d-4c7a-88ab-5ae508285f49
+uuid: a1191277-8f39-4206-8b61-a8db3a78a68b
 langcode: en
 status: true
 dependencies:
@@ -42,8 +42,8 @@ content:
     type: image
     label: hidden
     settings:
-      image_link: ''
       image_style: wide
+      image_link: ''
       image_loading:
         attribute: lazy
     third_party_settings: {  }
@@ -62,8 +62,4 @@ content:
     third_party_settings: {  }
     weight: 100
     region: content
-hidden:
-  breadcrumbs: true
-  langcode: true
-  published_at: true
-  search_api_excerpt: true
+hidden: {  }

@@ -1,11 +1,8 @@
-uuid: ce95a4d8-3acf-4fa1-b1db-62abd16cf159
+uuid: 04ea3e4b-6932-4108-a59f-92e2d171bb89
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.user.user.field_last_password_reset
-    - field.field.user.user.field_password_expiration
-    - field.field.user.user.field_pending_expire_sent
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
@@ -25,17 +22,11 @@ content:
     type: image
     label: hidden
     settings:
-      image_link: content
       image_style: thumbnail
+      image_link: content
       image_loading:
         attribute: lazy
     third_party_settings: {  }
     weight: 0
     region: content
-hidden:
-  breadcrumbs: true
-  field_last_password_reset: true
-  field_password_expiration: true
-  field_pending_expire_sent: true
-  langcode: true
-  search_api_excerpt: true
+hidden: {  }

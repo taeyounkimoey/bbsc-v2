@@ -1,4 +1,4 @@
-uuid: 7f83179c-a9c4-474f-b472-1c30b5d59f3f
+uuid: c6ab0226-248e-4471-98b8-ef8cb5281355
 langcode: en
 status: true
 dependencies:
@@ -7,7 +7,6 @@ dependencies:
     - node.type.page
   module:
     - path
-    - publication_date
     - text
 _core:
   default_config_hash: SfpLhPExzvR0MgFp0Wp7CrmgEnhcqQ-fXIWFhbf4ue0
@@ -32,13 +31,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  langcode:
-    type: language_select
-    weight: 2
-    region: content
-    settings:
-      include_locked: true
-    third_party_settings: {  }
   path:
     type: path
     weight: 30
@@ -51,12 +43,6 @@ content:
     region: content
     settings:
       display_label: true
-    third_party_settings: {  }
-  published_at:
-    type: publication_date_timestamp
-    weight: 10
-    region: content
-    settings: {  }
     third_party_settings: {  }
   status:
     type: boolean_checkbox
@@ -89,10 +75,5 @@ content:
       match_limit: 10
       size: 60
       placeholder: ''
-    third_party_settings: {  }
-  url_redirects:
-    weight: 50
-    region: content
-    settings: {  }
     third_party_settings: {  }
 hidden: {  }

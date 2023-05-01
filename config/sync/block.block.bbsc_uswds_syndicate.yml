@@ -1,0 +1,23 @@
+uuid: c25e15eb-c79e-4919-9420-d22b5d32ef3c
+langcode: en
+status: false
+dependencies:
+  module:
+    - node
+  theme:
+    - bbsc_uswds
+_core:
+  default_config_hash: 0gq3VPg-_UM69FCCWurLFIrrnIjC2HLKhwo9iQNtcUo
+id: bbsc_uswds_syndicate
+theme: bbsc_uswds
+region: header_top
+weight: 0
+provider: null
+plugin: node_syndicate_block
+settings:
+  id: node_syndicate_block
+  label: 'RSS feed'
+  label_display: '0'
+  provider: node
+  block_count: 10
+visibility: {  }

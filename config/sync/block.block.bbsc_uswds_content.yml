@@ -1,0 +1,22 @@
+uuid: 16bb1ba3-46ed-4600-ae75-d76c12e37d56
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bbsc_uswds
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: bbsc_uswds_content
+theme: bbsc_uswds
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

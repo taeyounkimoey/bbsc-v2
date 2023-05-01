@@ -1,0 +1,22 @@
+uuid: ddeadbcc-cb24-4c1b-995a-30cdd5a9da58
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bbsc_uswds
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: bbsc_uswds_breadcrumbs
+theme: bbsc_uswds
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

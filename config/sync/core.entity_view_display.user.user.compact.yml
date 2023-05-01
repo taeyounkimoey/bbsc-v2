@@ -1,12 +1,9 @@
-uuid: 4affb84d-06b7-48bf-8af6-f294d61d7fe0
+uuid: efc88751-4067-4963-ae3a-bbee2dafeb44
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.user.compact
-    - field.field.user.user.field_last_password_reset
-    - field.field.user.user.field_password_expiration
-    - field.field.user.user.field_pending_expire_sent
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
@@ -23,18 +20,12 @@ content:
     type: image
     label: hidden
     settings:
-      image_link: content
       image_style: thumbnail
+      image_link: content
       image_loading:
         attribute: lazy
     third_party_settings: {  }
     weight: 0
     region: content
 hidden:
-  breadcrumbs: true
-  field_last_password_reset: true
-  field_password_expiration: true
-  field_pending_expire_sent: true
-  langcode: true
   member_for: true
-  search_api_excerpt: true

@@ -1,0 +1,22 @@
+uuid: de43a2cb-7872-4183-9c5c-a3ab9315c930
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bbsc_uswds
+_core:
+  default_config_hash: BZ5tpW7H8X4PVGRm3MImTIHd2tN0eF7zOtp4SpRYUA0
+id: bbsc_uswds_messages
+theme: bbsc_uswds
+region: highlighted
+weight: -5
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,23 @@
+uuid: 5a0348f9-cef0-403c-bbae-5f0b49c6f528
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - bbsc_uswds
+_core:
+  default_config_hash: yEBET0cqDbk8dkWzaJw-8CKft0961VBflsISoSR6Lj8
+id: bbsc_uswds_search_form_narrow
+theme: bbsc_uswds
+region: primary_menu
+weight: -4
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (narrow)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

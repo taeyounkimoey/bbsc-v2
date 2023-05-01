@@ -1,0 +1,22 @@
+uuid: 155506ce-a57c-4b5d-aa84-d186e62b5cc3
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - bbsc_uswds
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: bbsc_uswds_powered
+theme: bbsc_uswds
+region: header_top
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

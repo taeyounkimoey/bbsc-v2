@@ -1,16 +1,13 @@
-uuid: 6e2709f9-9523-4033-bc53-828fbcfeff47
+uuid: 386046d5-02f5-4161-abda-c9dc2bb300a9
 langcode: en
 status: true
 dependencies:
   config:
     - filter.format.basic_html
-    - filter.format.webform_default
   module:
     - comment
     - contact
     - filter
-    - google_analytics
-    - media
     - search
     - shortcut
     - system
@@ -25,10 +22,7 @@ permissions:
   - 'access content'
   - 'access shortcuts'
   - 'access site-wide contact form'
-  - 'opt-in or out of google analytics tracking'
   - 'post comments'
   - 'search content'
   - 'skip comment approval'
   - 'use text format basic_html'
-  - 'use text format webform_default'
-  - 'view media'

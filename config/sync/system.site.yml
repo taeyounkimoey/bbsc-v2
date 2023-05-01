@@ -1,8 +1,8 @@
 _core:
   default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
 langcode: en
-uuid: 1370ff98-58b0-44cd-b6e9-13c00ddf558e
-name: BBSC
+uuid: f90d09d1-2c78-4982-ad8e-601508875168
+name: 'BBSC V2'
 mail: test@test.com
 slogan: ''
 page:
